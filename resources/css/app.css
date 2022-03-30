@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.background-image{
+    background-image: url('https://cdn.pixabay.com/photo/2018/04/05/15/53/office-work-3293203_960_720.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 800px;
+}
+
+
