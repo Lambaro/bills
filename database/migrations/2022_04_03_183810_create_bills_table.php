@@ -16,11 +16,12 @@ return new class extends Migration
         Schema::create('bills', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
-            $table->boolean('paid')->nullable();
-            $table->date('todayDate');
-            $table->date('dueDate');
+            $table->string('paid');
+            $table->dateTime('todayDate');
+            $table->dateTime('dueDate');
             $table->text('description');
-
+            $table->unsignedBigInteger('user_id');
+            $table->timestamps();
         });
     }
 

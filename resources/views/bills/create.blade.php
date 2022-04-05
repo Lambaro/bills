@@ -8,19 +8,17 @@
             Add you data here :
         </h1>
 
-        <form action="/bills" method="post" enctype="multipart/form-data">
-
+        <form action="/bills" method="POST" enctype="multipart/form-data">
             @csrf
+
             <div class="m-5">
                 <label for="title" class="uppercase font-extrabold text-gray-800 mb-10">Name of your bill:</label><br>
                 <input type="text" name="title" id="title" placeholder="Name..." class="mb-10">
             </div>
+
             <div class="m-5">
-                <h1 class="uppercase font-extrabold text-gray-800"> 1. Is your bill paid ?</h1>
-
-                <input name="paid" type="checkbox" value="paid" id="paid"  class="mb-10">
-                <label for="paid" class="text-green-700 font-bold">Yes</label>
-
+                <label for="paid" class="uppercase font-extrabold text-gray-800"> 1. Is your bill paid ?</label><br>
+                <input name="paid" type="text" id="paid" class="mb-10">
             </div>
 
             <div class="m-5">
@@ -29,7 +27,7 @@
             </div>
 
             <div class="m-5">
-                <label  for="dueDate" class="uppercase font-extrabold text-gray-800"> 3. Until when you have to pay a bill?</label>
+                <label  for="dueDate" class="uppercase font-extrabold text-gray-800"> 3. Until when you have to pay a bill?</label><br>
                 <input name="dueDate" type="date" id="dueDate" class="mb-10">
             </div>
 

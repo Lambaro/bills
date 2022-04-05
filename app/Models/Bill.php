@@ -9,4 +9,7 @@ class Bill extends Model
 {
     use HasFactory;
     protected $guarded = [];
+
+    //protected $fillable= ['title', 'description', 'date'];
+
 }
